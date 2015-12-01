@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>  
+  
+    <!-- ch.qos.logback.core.ConsoleAppender 控制台输出 -->  
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">  
+        <encoder>  
+            <pattern>[%-5level] %d{HH:mm:ss.SSS} [%thread] %logger{36}  %method %L- %msg%n</pattern>  
+        </encoder>  
+    </appender>  
+  
+    <!-- ch.qos.logback.core.rolling.RollingFileAppender 文件日志输出 -->  
+    <appender name="file"  class="ch.qos.logback.core.rolling.RollingFileAppender">  
+        <Encoding>UTF-8</Encoding>  
+        <File>D:/logs/auto-generator/test.log</File>  
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">  
+            <FileNamePattern>test-%d{yyyy-MM-dd}.log</FileNamePattern>  
+            <MaxHistory>10</MaxHistory>  
+            <TimeBasedFileNamingAndTriggeringPolicy  
+                class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">  
+                <MaxFileSize>5MB</MaxFileSize>  
+            </TimeBasedFileNamingAndTriggeringPolicy>  
+        </rollingPolicy>  
+        <layout class="ch.qos.logback.classic.PatternLayout">  
+            <pattern>[%-5level] %d{HH:mm:ss.SSS} [%thread] %logger{36} %method %L- %msg%n  
+            </pattern>  
+        </layout>  
+    </appender>  
+    
+    <!-- 日志级别 -->  
+    <root>  
+        <level value="error" />  
+        <level value="info" />  
+        <appender-ref ref="console" />  
+        <appender-ref ref="file" />  
+    </root>  
+  
+</configuration>   
