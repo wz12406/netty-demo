@@ -73,5 +73,20 @@
 			<artifactId>dom4j</artifactId>
 			<version>${dom4j.version}</version>
 		</dependency>
+		<dependency>
+		  <groupId>org.jibx.schema.ws</groupId>
+		  <artifactId>org.jibx.schema.ws.utilities</artifactId>
+		  <version>1.1.2</version>
+		</dependency>
+		<dependency>
+		  <groupId>org.jboss.marshalling</groupId>
+		  <artifactId>jboss-marshalling</artifactId>
+		  <version>2.0.0.Beta2</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.jboss.marshalling</groupId>
+		    <artifactId>jboss-marshalling-serial</artifactId>
+		    <version>2.0.0.Beta2</version>
+		</dependency>
 	</dependencies>
 </project>
