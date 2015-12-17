@@ -1,0 +1,200 @@
+[INFO ] 16:51:47.570 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xb0297b47] REGISTERED
+[INFO ] 16:51:47.668 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xb0297b47] BIND: /127.0.0.1:8080
+[INFO ] 16:51:47.673 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xb0297b47, /127.0.0.1:8080] ACTIVE
+[INFO ] 16:51:58.025 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x5d30fc7c] REGISTERED
+[INFO ] 16:51:58.028 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x5d30fc7c] BIND: /127.0.0.1:8080
+[INFO ] 16:51:58.031 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x5d30fc7c, /127.0.0.1:8080] ACTIVE
+[INFO ] 16:52:07.334 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x5d30fc7c, /127.0.0.1:8080] RECEIVED: [id: 0x4ff1b062, /127.0.0.1:12088 => /127.0.0.1:8080]
+[WARN ] 16:52:57.368 [nioEventLoopGroup-2-1] i.n.channel.DefaultChannelPipeline warn 151- An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.timeout.ReadTimeoutException: null
+[WARN ] 16:52:57.379 [nioEventLoopGroup-3-1] i.n.channel.DefaultChannelPipeline warn 151- An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.timeout.ReadTimeoutException: null
+[INFO ] 16:53:02.397 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x5d30fc7c, /127.0.0.1:8080] RECEIVED: [id: 0x337b2fec, /127.0.0.1:12088 => /127.0.0.1:8080]
+[WARN ] 16:53:52.400 [nioEventLoopGroup-2-2] i.n.channel.DefaultChannelPipeline warn 151- An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.timeout.ReadTimeoutException: null
+[INFO ] 17:02:14.125 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x2746455c] REGISTERED
+[INFO ] 17:02:14.130 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x2746455c] BIND: /127.0.0.1:8080
+[INFO ] 17:02:14.133 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x2746455c, /127.0.0.1:8080] ACTIVE
+[INFO ] 17:02:28.483 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x2746455c, /127.0.0.1:8080] RECEIVED: [id: 0x822b2e2a, /127.0.0.1:12088 => /127.0.0.1:8080]
+[WARN ] 17:03:11.308 [nioEventLoopGroup-3-1] i.n.channel.DefaultChannelPipeline warn 151- An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_60]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_60]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_60]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_60]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_60]
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+[INFO ] 17:04:52.391 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x82b6ca64] REGISTERED
+[INFO ] 17:04:52.394 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x82b6ca64] BIND: /127.0.0.1:8080
+[INFO ] 17:04:52.397 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x82b6ca64, /127.0.0.1:8080] ACTIVE
+[INFO ] 17:05:14.878 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x82b6ca64, /127.0.0.1:8080] RECEIVED: [id: 0x79e21444, /127.0.0.1:12088 => /127.0.0.1:8080]
+[WARN ] 17:06:04.894 [nioEventLoopGroup-2-1] i.n.channel.DefaultChannelPipeline warn 151- An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.timeout.ReadTimeoutException: null
+[INFO ] 17:09:32.337 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x82b6ca64, /127.0.0.1:8080] RECEIVED: [id: 0x8a0063d5, /127.0.0.1:12088 => /127.0.0.1:8080]
+[WARN ] 17:09:47.516 [nioEventLoopGroup-3-2] i.n.channel.DefaultChannelPipeline warn 151- An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_60]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_60]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_60]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_60]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_60]
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+[INFO ] 17:10:43.397 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x82b6ca64, /127.0.0.1:8080] RECEIVED: [id: 0x015c65e4, /127.0.0.1:12088 => /127.0.0.1:8080]
+[WARN ] 17:11:33.409 [nioEventLoopGroup-3-3] i.n.channel.DefaultChannelPipeline warn 151- An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.timeout.ReadTimeoutException: null
+[WARN ] 17:11:33.421 [nioEventLoopGroup-2-1] i.n.channel.DefaultChannelPipeline warn 151- An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.timeout.ReadTimeoutException: null
+[INFO ] 17:12:09.169 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xff57b037] REGISTERED
+[INFO ] 17:12:09.174 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xff57b037] BIND: /127.0.0.1:8080
+[INFO ] 17:12:09.176 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xff57b037, /127.0.0.1:8080] ACTIVE
+[INFO ] 17:12:14.641 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xff57b037, /127.0.0.1:8080] RECEIVED: [id: 0x2074017c, /127.0.0.1:12088 => /127.0.0.1:8080]
+[WARN ] 17:12:50.109 [nioEventLoopGroup-3-1] i.n.channel.DefaultChannelPipeline warn 151- An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_60]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_60]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_60]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_60]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_60]
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+[INFO ] 17:13:38.781 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x02d44948] REGISTERED
+[INFO ] 17:13:38.785 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x02d44948] BIND: /127.0.0.1:8080
+[INFO ] 17:13:38.787 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x02d44948] CLOSE
+[INFO ] 17:13:54.441 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xff57b037, /127.0.0.1:8080] RECEIVED: [id: 0x7d04f2a9, /127.0.0.1:12088 => /127.0.0.1:8080]
+[WARN ] 17:14:44.452 [nioEventLoopGroup-3-2] i.n.channel.DefaultChannelPipeline warn 151- An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.timeout.ReadTimeoutException: null
+[WARN ] 17:14:44.456 [nioEventLoopGroup-2-1] i.n.channel.DefaultChannelPipeline warn 151- An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.timeout.ReadTimeoutException: null
+[INFO ] 17:15:02.436 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xff57b037, /127.0.0.1:8080] RECEIVED: [id: 0x006389cd, /127.0.0.1:12088 => /127.0.0.1:8080]
+[WARN ] 17:15:19.347 [nioEventLoopGroup-3-3] i.n.channel.DefaultChannelPipeline warn 151- An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_60]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_60]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_60]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_60]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_60]
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+[INFO ] 17:15:24.807 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xff57b037, /127.0.0.1:8080] RECEIVED: [id: 0x42fa52db, /127.0.0.1:12088 => /127.0.0.1:8080]
+[INFO ] 17:20:16.967 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xa1911a9b] REGISTERED
+[INFO ] 17:20:16.971 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xa1911a9b] BIND: /127.0.0.1:8080
+[INFO ] 17:20:16.974 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xa1911a9b, /127.0.0.1:8080] ACTIVE
+[INFO ] 17:20:21.646 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xa1911a9b, /127.0.0.1:8080] RECEIVED: [id: 0x45dd0ac2, /127.0.0.1:12088 => /127.0.0.1:8080]
+[WARN ] 17:20:28.666 [nioEventLoopGroup-2-1] i.n.channel.DefaultChannelPipeline warn 151- An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_60]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_60]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_60]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_60]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_60]
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+[INFO ] 17:23:38.089 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xfc4cdddb] REGISTERED
+[INFO ] 17:23:38.093 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xfc4cdddb] BIND: /127.0.0.1:8080
+[INFO ] 17:23:38.096 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xfc4cdddb, /127.0.0.1:8080] ACTIVE
+[INFO ] 17:23:42.766 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xfc4cdddb, /127.0.0.1:8080] RECEIVED: [id: 0x6821d798, /127.0.0.1:12088 => /127.0.0.1:8080]
+[WARN ] 17:24:09.167 [nioEventLoopGroup-3-1] i.n.channel.DefaultChannelPipeline warn 151- An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_60]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_60]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_60]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_60]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_60]
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+[INFO ] 17:24:37.990 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x592f769e] REGISTERED
+[INFO ] 17:24:37.993 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x592f769e] BIND: /127.0.0.1:8080
+[INFO ] 17:24:37.996 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x592f769e, /127.0.0.1:8080] ACTIVE
+[INFO ] 17:24:43.054 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x592f769e, /127.0.0.1:8080] RECEIVED: [id: 0xee6932bd, /127.0.0.1:12088 => /127.0.0.1:8080]
+[WARN ] 17:25:33.071 [nioEventLoopGroup-2-1] i.n.channel.DefaultChannelPipeline warn 151- An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.timeout.ReadTimeoutException: null
+[INFO ] 17:27:02.487 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xee7812ad] REGISTERED
+[INFO ] 17:27:02.491 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xee7812ad] BIND: /127.0.0.1:8080
+[INFO ] 17:27:02.494 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xee7812ad, /127.0.0.1:8080] ACTIVE
+[INFO ] 17:27:36.055 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xee7812ad, /127.0.0.1:8080] RECEIVED: [id: 0x50d0530d, /127.0.0.1:12088 => /127.0.0.1:8080]
+[WARN ] 17:28:13.268 [nioEventLoopGroup-3-1] i.n.channel.DefaultChannelPipeline warn 151- An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_60]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_60]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_60]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_60]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_60]
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+[INFO ] 17:29:09.168 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0xee7812ad, /127.0.0.1:8080] RECEIVED: [id: 0xed29ebac, /127.0.0.1:12088 => /127.0.0.1:8080]
+[WARN ] 17:29:23.849 [nioEventLoopGroup-3-2] i.n.channel.DefaultChannelPipeline warn 151- An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_60]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_60]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_60]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_60]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_60]
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:871) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:208) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:485) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:452) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:346) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:794) [netty-all-5.0.0.Alpha1.jar:5.0.0.Alpha1]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+[INFO ] 17:34:54.232 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x1447c841] REGISTERED
+[INFO ] 17:34:54.236 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x1447c841] BIND: /127.0.0.1:8080
+[INFO ] 17:34:54.239 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x1447c841, /127.0.0.1:8080] ACTIVE
+[INFO ] 17:35:00.975 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x1447c841, /127.0.0.1:8080] RECEIVED: [id: 0x5b9f1d2a, /127.0.0.1:12088 => /127.0.0.1:8080]
+[WARN ] 17:35:50.993 [nioEventLoopGroup-2-1] i.n.channel.DefaultChannelPipeline warn 151- An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.timeout.ReadTimeoutException: null
+[INFO ] 17:37:06.312 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x189fd771] REGISTERED
+[INFO ] 17:37:06.316 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x189fd771] BIND: /127.0.0.1:8080
+[INFO ] 17:37:06.319 [nioEventLoopGroup-2-1] i.n.handler.logging.LoggingHandler info 101- [id: 0x189fd771, /127.0.0.1:8080] ACTIVE

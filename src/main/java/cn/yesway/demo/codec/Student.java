@@ -2,6 +2,7 @@ package cn.yesway.demo.codec;
 
 import java.io.Serializable;
 
+import io.netty.util.internal.chmv8.ForkJoinTask;
 /** 
  * @author wangzhen 
  * @version 1.0  
@@ -9,7 +10,6 @@ import java.io.Serializable;
  * 
  */
 public class Student implements Serializable {
-	
 	/**
 	 * 
 	 */
