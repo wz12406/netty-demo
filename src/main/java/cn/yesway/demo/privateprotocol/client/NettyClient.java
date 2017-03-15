@@ -1,11 +1,10 @@
 package cn.yesway.demo.privateprotocol.client;
 
+import cn.yesway.demo.privateprotocol.NettyConstant;
+import cn.yesway.demo.privateprotocol.codec.NettyMessageDecoder;
+import cn.yesway.demo.privateprotocol.codec.NettyMessageEncoder;
 import io.netty.bootstrap.Bootstrap;
-import io.netty.channel.Channel;
-import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelInitializer;
-import io.netty.channel.ChannelOption;
-import io.netty.channel.EventLoopGroup;
+import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.timeout.ReadTimeoutHandler;
@@ -14,10 +13,6 @@ import java.net.InetSocketAddress;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-
-import cn.yesway.demo.privateprotocol.NettyConstant;
-import cn.yesway.demo.privateprotocol.codec.NettyMessageDecoder;
-import cn.yesway.demo.privateprotocol.codec.NettyMessageEncoder;
 
 /** 
  * @author wangzhen 
@@ -60,7 +55,6 @@ public class NettyClient {
 			e.printStackTrace();
 		}finally{
 			executorService.execute(new Runnable() {
-				@Override
 				public void run() {
 						try {
 							TimeUnit.SECONDS.sleep(5);

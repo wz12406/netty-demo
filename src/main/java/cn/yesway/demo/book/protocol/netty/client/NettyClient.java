@@ -15,6 +15,9 @@
  */
 package cn.yesway.demo.book.protocol.netty.client;
 
+import cn.yesway.demo.book.protocol.netty.NettyConstant;
+import cn.yesway.demo.book.protocol.netty.codec.NettyMessageDecoder;
+import cn.yesway.demo.book.protocol.netty.codec.NettyMessageEncoder;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
@@ -29,10 +32,6 @@ import java.net.InetSocketAddress;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-
-import cn.yesway.demo.book.protocol.netty.NettyConstant;
-import cn.yesway.demo.book.protocol.netty.codec.NettyMessageDecoder;
-import cn.yesway.demo.book.protocol.netty.codec.NettyMessageEncoder;
 
 /**
  * @author Lilinfeng
@@ -78,7 +77,6 @@ public class NettyClient {
 	} finally {
 	    // 所有资源释放完成之后，清空资源，再次发起重连操作
 	    executor.execute(new Runnable() {
-		@Override
 		public void run() {
 		    try {
 			TimeUnit.SECONDS.sleep(1);

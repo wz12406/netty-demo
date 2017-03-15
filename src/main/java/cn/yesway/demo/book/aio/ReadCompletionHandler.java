@@ -36,7 +36,6 @@ public class ReadCompletionHandler implements
 	    this.channel = channel;
     }
 
-    @Override
     public void completed(Integer result, ByteBuffer attachment) {
 	attachment.flip();
 	byte[] body = new byte[attachment.remaining()];
@@ -60,14 +59,12 @@ public class ReadCompletionHandler implements
 	    writeBuffer.flip();
 	    channel.write(writeBuffer, writeBuffer,
 		    new CompletionHandler<Integer, ByteBuffer>() {
-			@Override
 			public void completed(Integer result, ByteBuffer buffer) {
 			    // 如果没有发送完成，继续发送
 			    if (buffer.hasRemaining())
 				channel.write(buffer, buffer, this);
 			}
 
-			@Override
 			public void failed(Throwable exc, ByteBuffer attachment) {
 			    try {
 				channel.close();
@@ -79,7 +76,6 @@ public class ReadCompletionHandler implements
 	}
     }
 
-    @Override
     public void failed(Throwable exc, ByteBuffer attachment) {
 	try {
 	    this.channel.close();

@@ -46,7 +46,6 @@ public class AsyncTimeClientHandler implements
 	}
     }
 
-    @Override
     public void run() {
 
 	latch = new CountDownLatch(1);
@@ -63,7 +62,6 @@ public class AsyncTimeClientHandler implements
 	}
     }
 
-    @Override
     public void completed(Void result, AsyncTimeClientHandler attachment) {
 	byte[] req = "QUERY TIME ORDER".getBytes();
 	ByteBuffer writeBuffer = ByteBuffer.allocate(req.length);
@@ -71,7 +69,6 @@ public class AsyncTimeClientHandler implements
 	writeBuffer.flip();
 	client.write(writeBuffer, writeBuffer,
 		new CompletionHandler<Integer, ByteBuffer>() {
-		    @Override
 		    public void completed(Integer result, ByteBuffer buffer) {
 			if (buffer.hasRemaining()) {
 			    client.write(buffer, buffer, this);
@@ -81,7 +78,6 @@ public class AsyncTimeClientHandler implements
 				    readBuffer,
 				    readBuffer,
 				    new CompletionHandler<Integer, ByteBuffer>() {
-					@Override
 					public void completed(Integer result,
 						ByteBuffer buffer) {
 					    buffer.flip();
@@ -100,7 +96,6 @@ public class AsyncTimeClientHandler implements
 					    }
 					}
 
-					@Override
 					public void failed(Throwable exc,
 						ByteBuffer attachment) {
 					    try {
@@ -114,7 +109,6 @@ public class AsyncTimeClientHandler implements
 			}
 		    }
 
-		    @Override
 		    public void failed(Throwable exc, ByteBuffer attachment) {
 			try {
 			    client.close();
@@ -126,7 +120,6 @@ public class AsyncTimeClientHandler implements
 		});
     }
 
-    @Override
     public void failed(Throwable exc, AsyncTimeClientHandler attachment) {
 	exc.printStackTrace();
 	try {
