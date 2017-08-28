@@ -13,7 +13,6 @@ public class VolatileUsage {
 		
 		public static void main(String[] args) throws Exception {
 			Thread task = new Thread(new Runnable() {
-				@Override
 				public void run() {
 					int i=0;
 					while(!stop){

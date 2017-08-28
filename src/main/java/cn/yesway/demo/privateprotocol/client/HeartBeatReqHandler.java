@@ -1,14 +1,13 @@
 package cn.yesway.demo.privateprotocol.client;
 
+import cn.yesway.demo.privateprotocol.MessageType;
+import cn.yesway.demo.privateprotocol.model.Header;
+import cn.yesway.demo.privateprotocol.model.NettyMessage;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.util.concurrent.ScheduledFuture;
 
 import java.util.concurrent.TimeUnit;
-
-import cn.yesway.demo.privateprotocol.MessageType;
-import cn.yesway.demo.privateprotocol.model.Header;
-import cn.yesway.demo.privateprotocol.model.NettyMessage;
 
 /** 
  * @author wangzhen 
@@ -49,7 +48,6 @@ public class HeartBeatReqHandler extends ChannelHandlerAdapter {
 		public HeartBeatTask(final ChannelHandlerContext ctx){
 			this.ctx =ctx;
 		}
-		@Override
 		public void run() {
 			NettyMessage heatBeat  = buildHeatBeat();
 			System.out.println("Client send heart beat message to server :-->"+heatBeat);

@@ -14,7 +14,7 @@ public class Header {
 	
 	private int length;//消息长度
 
-	private long sessionID;//回话ID
+	private long sessionID;//会话ID
 	
 	private byte type;//消息类型
 	
